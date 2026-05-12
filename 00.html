@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>楠寺的自我介紹</title>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+	<style>
+		@font-face{
+			font-family: '沉魚落雁';
+			src: url('fonts/沉魚落雁字體.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+			font-display: swap;
+		}
+		:root{--bg:#FAD6E0;--card:#FFFFFF;--accent:#D4D3D1;--muted:#6b7280;--btn:#D4D3D1}
+		*{box-sizing:border-box}
+		body{margin:0;font-family:'沉魚落雁', 'Dancing Script', 'Noto Sans TC', system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:#111;position:relative}
+		body::before{content:'';position:fixed;top:0;left:0;right:0;bottom:0;background:url('img/bg.png') center/cover no-repeat fixed;filter:saturate(0.65);z-index:-1;pointer-events:none}
+		.wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem}
+		.card{width:100%;max-width:720px;background:rgba(255,255,255,0.85);border-radius:14px;box-shadow:0 6px 24px rgba(16,24,40,.08);padding:2rem;display:grid;grid-template-columns:1fr;gap:1rem;align-items:start;text-align:center}
+		.avatar{width:160px;height:160px;border-radius:9999px;overflow:hidden;background:#FFFFFF;display:flex;align-items:center;justify-content:center;margin:0 auto}
+		.avatar img{width:100%;height:100%;object-fit:contain;object-position:center;display:block}
+		.placeholder{width:100%;height:100%;display:none;align-items:center;justify-content:center;color:var(--accent);font-weight:700}
+		h1{margin:0;font-size:2.25rem;font-family:'沉魚落雁', cursive}
+		.sub{color:var(--muted);margin-top:.35rem;font-size:1.25rem;line-height:1.5}
+		.buttons{margin-top:1rem;display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap}
+		.btn{background:var(--btn);border:none;padding:.6rem 1rem;border-radius:999px;cursor:pointer;font-weight:600;font-family:'沉魚落雁', cursive;font-size:1.1rem;line-height:1.3}
+		.btn:hover{filter:brightness(.95)}
+		.tags{margin-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center}
+		.tag{background:#f1f5f9;color:#0f172a;padding:.35rem .6rem;border-radius:999px;font-size:.85rem}
+		.details-panel{display:none;margin-top:1.25rem;text-align:left}
+		.details-panel.show{display:block}
+		.detail-box{display:none;margin-top:1rem;padding:1rem 1.15rem;border-radius:12px;background:#fdf7fa;border:1px solid #ecdbe3}
+		.detail-box.show{display:block}
+		.detail-box h3{margin-top:0}
+		footer{margin-top:1.25rem;color:var(--muted);font-size:.9rem;text-align:center}
+		@media(min-width:520px){.details-panel{padding:0 2rem}.card{padding:2.5rem}}
+	</style>
+</head>
+<body>
+	<main class="wrap">
+		<article class="card">
+			<div class="avatar" aria-hidden="true">
+				<!-- 頭貼：請將你的圖片放到 workspace 下的 img/profile.jpg，或修改下方 src -->
+			<img src="img/主頁頭貼.png" alt="主頁頭貼（img/主頁頭貼.png）" onerror="this.style.display='none'">
+				<div class="placeholder">楠</div>
+			</div>
+			<div>
+				<h1>楠寺 <span style="color:var(--accent);font-weight:600"></span></h1>
+				<div class="sub">目前熱衷於打愛噗哩</div>
+
+				<div class="buttons" role="group" aria-label="更多說明按鈕">
+					<button class="btn" data-target="me">關於我</button>
+					<button class="btn" data-target="anime">動漫</button>
+					<button class="btn" data-target="star">明星</button>
+					<button class="btn" data-target="game">遊戲</button>
+				</div>
+			</div>
+
+			<div id="details" class="details-panel" aria-live="polite">
+				<div id="me" class="detail-box">
+					<h3>關於我</h3>
+					<p style="font-size:1.5rem">楠楠自語</p>
+					<p>早安大家！歡迎來到楠楠的自我介紹</p>
+					<p>可以叫我楠寺、楠楠、阿楠，隨意都可以，讓我知道你在叫我即可！</p>
+					<p>近年來現生都較為繁忙，但還是有在關注很多二次元ㄉ東西</p>
+					<p>最近多餘的錢都拿去打愛噗哩了TT</p>
+					<p style="font-size:1.5rem">一些雷點</p>
+					<p>白嫖、乞討等行為</p>
+					<p>雙標、內鬼等行為</p>
+					<p style="font-size:1.5rem">可能雷到你</p>
+					<p>自覺電波會先刪友</p>
+					<p>沒有十分熟絡會長時間不讀不回</p>
+					<br>
+					<p style="font-size:1.2rem">大概以上是我的簡單介紹，歡迎互動更了解我呀</p>
+				</div>
+				<div id="anime" class="detail-box">
+					<h3>動漫</h3>
+					<p style="font-size:1.5rem"><strong>目前深坑（跟我聊可以聊三天三夜那種）：</strong></p>
+					<p style="font-size:1.2rem">獵人</p>
+					<p>西索的胸肌推（好色之徒）</p>
+					<p style="font-size:1.2rem">全職高手</p>
+					<p>周澤楷的嘴替推（愛亂講話）</p>
+					<p style="font-size:1.2rem">咒術迴戰</p>
+					<p>Ryomen Sukuna的手指推（手手控）</p>
+					<p style="font-size:1.5rem"><strong>目前淡坑（需要喚起我回憶那種）：</strong></p>
+					<p style="font-size:1.2rem">運動番：</p>
+					<p>影子籃球員、藍色監獄、排球少年</p>
+					<p style="font-size:1.2rem">戀愛番：</p>
+					<P>我的幸福婚約、和山田談場Lv999的戀愛</P>
+					<P>不時輕聲地以俄語遮羞的鄰座艾莉同學</P>
+					<p style="font-size:1.2rem">美食番：</p>
+					<p>相合之物、擁有超常技能的異世界流浪美食家</p>
+					<p style="font-size:1.2rem">其他番：</p>
+					<p>我推的孩子、間諜家家酒、膽大黨</p>
+				</div>
+				<div id="star" class="detail-box">
+					<h3>明星</h3>
+					<p style="font-size:1.25rem">永遠摯愛村上真都</p>
+					<p style="font-size:1.1rem">RAUL金髮無條件溺愛</p>
+					<p style="font-size:1.5rem">演員</p>
+					<p>日本：本田響矢、橫濱流星</p>
+					<p>中國：丁禹兮、王鶴棣</p>
+					<p style="font-size:1.5rem">歌手</p>
+					<p>日本：Aimer、Yuika、Yuuri</p>
+					<p>中國：王源、周震南、曹楊</p>
+				</div>
+				<div id="game" class="detail-box">
+					<h3>遊戲</h3>
+					<p style="font-size:1.2rem">祕密的偶像公主</p>
+					<p>四之宮琳琳激推玩家</p>
+					<p>下面是我的捏角（我覺得很可愛ㄚ）</p>					
+					<img src="img/愛噗哩截圖.png" alt="愛噗哩截圖" style="max-width:70%;height:auto;border-radius:8px;margin-top:0.5rem;display:block;margin-left:auto;margin-right:auto">
+					<p style="font-size:1.2rem">偶像學園</p>
+					<p>天羽圓媽媽推 永遠支持愛麗絲寶寶</p>
+					<p style="font-size:1.2rem">Livly Islands</p>
+					<p>最愛養綿綿貓 我是綿綿貓教主</p>
+					<p style="font-size:1.2rem">BanG Dream!日服</p>
+					<p>倉田真白激推白毛控 媽媽永遠愛你</p>
+					<p style="font-size:1.2rem">IDOKISH7</p>
+					<p>亥清悠大豬豬推 喜歡傲嬌小男孩</p>
+				</div>
+			</div>
+
+		</article>
+	</main>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var avatarImg = document.querySelector('.avatar img');
+			var placeholder = document.querySelector('.placeholder');
+			if (avatarImg) {
+				avatarImg.addEventListener('error', function () {
+					if (placeholder) placeholder.style.display = 'flex';
+					avatarImg.style.display = 'none';
+				});
+			}
+
+			document.querySelectorAll('.btn').forEach(function (button) {
+				button.addEventListener('click', function (e) {
+					var id = e.currentTarget.dataset.target;
+					var panel = document.getElementById('details');
+					var box = document.getElementById(id);
+					if (panel) panel.classList.add('show');
+					document.querySelectorAll('.detail-box').forEach(function (item) {
+						item.classList.remove('show');
+					});
+					if (box) box.classList.add('show');
+				});
+			});
+		});
+	</script>
+
+</body>
+</html>
